@@ -17,4 +17,7 @@ while ischar(tline)
     tline = fgetl(fid);
 end
 fclose(fid);
-F = strrep(F,' ','');
+F = strrep(F,'       ','');
+F = strrep(F,'}}}',['}}}' char(10)]);
+F = strrep(F,'beat"}',['beat"}' char(10)]);
+F = strrep(F,':200}',[':200}' char(10)]);
