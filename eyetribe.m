@@ -101,7 +101,7 @@ classdef eyetribe < handle
             rr = loadjson(obj.reply);
             if isfield(rr,'statuscode')
                 if rr.statuscode==200
-                    fprintf('>> Successfully set to push model, now streaming to global variables...\n')
+                    fprintf('>> Successfully set to push model, now streaming...\n')
                 else
                     error('Something went wrong writing to push model...')
                 end
