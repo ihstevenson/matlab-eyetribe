@@ -1,14 +1,12 @@
 
-This is a light-weight matlab class for connecting to The Eyetribe tracker (http://theeyetribe.com/). Allows realtime access to gaze data using the JSON API and simultaneous recording to a file using matlab's native tcpip.
+This is a light-weight matlab class for connecting to The Eyetribe tracker (http://theeyetribe.com/). Allows realtime access to gaze data and simultaneous recording using the JSON API and Matlab's native tcp/ip object
 
 * Author:  Ian Stevenson
 * This work is licensed under a Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/).
 
-Dependencies:
-    JSONlab (https://github.com/fangq/jsonlab)
-
-Generic Procedure:
-    1. Use the EyeTribe UI to connect and calibrate the tracker
+Install:
+    1. Install JSONlab (https://github.com/fangq/jsonlab)
+    2. Use the EyeTribe UI (http://dev.theeyetribe.com/general/) to connect and calibrate the tracker
     2. Run demo.m
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,10 +23,12 @@ If it does not exist you may need to add it, e.g....
 }
 }
 
+The port is hard-coded in eyetribe.m.
+
 Specs:
-Accuracy            0.5° – 1°
-Spatial Resolution	0.1° (RMS)
+Accuracy            0.5Â° â€“ 1Â°
+Spatial Resolution	0.1Â° (RMS)
 Latency             <20ms at 60Hz
 Calibration         9, 12 or 16 points
-Operating range		45cm – 75cm
+Operating range		45cm â€“ 75cm
 Tracking area		40cm x 30cm at 65cm distance (30Hz)
