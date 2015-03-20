@@ -1,5 +1,5 @@
 
-This is a light-weight matlab class for connecting to The Eyetribe tracker (http://theeyetribe.com/). Allows realtime access to gaze data and simultaneous recording using the JSON API and Matlab's native tcp/ip object
+This is a light-weight matlab class for connecting to the EyeTribe tracker (http://theeyetribe.com/). Allows realtime access to gaze data and simultaneous recording using the JSON API and Matlab's native tcp/ip object
 
 * Author:  Ian Stevenson
 * This work is licensed under a Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/).
